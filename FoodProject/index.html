@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Food Project</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./resources/css/style.css" class="style">
+        <link rel="stylesheet" href="./vendors/css/normalize.css" class="style">
+        <link rel="stylesheet" href="./vendors/css/queries.css" class="style">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" >
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="logo-container">
+                    <h1>TastyTales
+                        <img src="./resources/img/logo.png" alt="logo" class="logo-img">
+                    </h1>
+                </div>
+                <ul class="main-nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">AboutUs</a></li>
+                    <li><a href="#plans">Contact</a></li>
+                </ul>
+                <button class="btn btn-login" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });">Login</button>
+            </nav>
+            <div class="main-text">
+                <p>Just Come To TastyTales & Order</p>
+                <button class="btn btn-order" onclick="document.getElementById('menu').scrollIntoView({ behavior: 'smooth' });">Order Now</button>
+                <button class="btn btn-explore" onclick="document.getElementById('plans').scrollIntoView({ behavior: 'smooth' });">Explore More</button>
+            </div>               
+        </header>
+        <section class="section-features" id="features" data-aos="fade-in" data-aos-duration="2000">
+            <div class="row">
+                <h2>Why Choose TastyTales?</h2>
+            </div>
+            <div class="row">
+                <div class="col span_1_of_4 box">
+                    <ion-icon class="feature-icon" name="fast-food-outline"></ion-icon>
+                    <h3>Fresh Ingredients</h3>
+                    <p>Only freshest and locally sourced ingredients go into our meals.</p>
+                </div>
+                <div class="col span_1_of_4 box">
+                    <ion-icon class="feature-icon" name="alarm-outline"></ion-icon>
+                    <h3>Fast Delivery</h3>
+                    <p>Get your food hot and fresh in under 30 minutes.</p>
+                </div>
+                <div class="col span_1_of_4 box">
+                    <ion-icon class="feature-icon" name="restaurant-outline"></ion-icon>
+                    <h3>Expert Chefs</h3>
+                    <p>Meals crafted by professional chefs with years of experience.</p>
+                </div>
+                <div class="col span_1_of_4 box">
+                    <ion-icon class="feature-icon" name="card-outline"></ion-icon>
+                    <h3>Easy Payments</h3>
+                    <p>Pay online securely using your preferred method.</p>
+                </div>
+            </div>
+        </section>
+        <section class="section-meals" id="menu" data-aos="fade-in" data-aos-duration="2000">
+            <ul class="meals-showcase" data-aos="slide-left" data-aos-duration="1000">
+                <li>
+                    <figure class="meal-photo">
+                        <img src="./resources/img/food1.png" alt="Meals">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo">
+                        <img src="./resources/img/food2.png" alt="Meals">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo">
+                        <img src="./resources/img/food3.png" alt="Meals">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo">
+                        <img src="./resources/img/food4.png" alt="Meals">
+                    </figure>
+                </li>
+            </ul>
+            <ul class="meals-showcase" data-aos="slide-right" data-aos-duration="1000">
+                <li>
+                    <figure class="meal-photo">
+                        <img src="./resources/img/food5.png" alt="Meals">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo">
+                        <img src="./resources/img/food6.png" alt="Meals">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo">
+                        <img src="./resources/img/food7.png" alt="Meals">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="meal-photo">
+                        <img src="./resources/img/food8.png" alt="Meals">
+                    </figure>
+                </li>
+            </ul>
+        </section>
+        <section class="section-cities" data-aos="fade-in" data-aos-duration="2000">
+            <div class="row">
+                <h2>Serving Happiness Across These Cities</h2>
+            </div>
+            <div class="row">
+                <div class="col span_1_of_4 box">
+                    <img src="./resources/img/city1.png" alt="Cities">
+                    <h3>Amsterdam</h3>
+                    <div class="city-feature">
+                        <ion-icon class="city-icon" name="person-circle-outline"></ion-icon>
+                        2000+ Happy Eaters
+                    </div>
+                    <div class="city-feature">
+                        <ion-icon class="city-icon" name="restaurant-outline"></ion-icon>
+                        30+ Chefs
+                    </div>
+                    <div class="city-feature">
+                        <ion-icon class="city-icon" name="logo-twitter"></ion-icon>
+                        <a href="#">@amsterdam</a>
+                    </div>
+                </div>
+                <div class="col span_1_of_4 box">
+                    <img src="./resources/img/city2.png" alt="Cities">
+                    <h3>Belgium</h3>
+                    <div class="city-feature">
+                        <ion-icon class="city-icon" name="person-circle-outline"></ion-icon>
+                        1400+ Happy Eaters
+                    </div>
+                    <div class="city-feature">
+                        <ion-icon class="city-icon" name="restaurant-outline"></ion-icon>
+                        50+ Chefs
+                    </div>
+                    <div class="city-feature">
+                        <ion-icon class="city-icon" name="logo-twitter"></ion-icon>
+                        <a href="#">@belgium</a>
+                    </div>
+                </div>
+                <div class="col span_1_of_4 box">
+                    <img src="./resources/img/city3.png" alt="Cities">
+                    <h3>Dresden</h3>
+                    <div class="city-feature">
+                        <ion-icon class="city-icon" name="person-circle-outline"></ion-icon>
+                        2500+ Happy Eaters
+                    </div>
+                    <div class="city-feature">
+                        <ion-icon class="city-icon" name="restaurant-outline"></ion-icon>
+                        70+ Chefs
+                    </div>
+                    <div class="city-feature">
+                        <ion-icon class="city-icon" name="logo-twitter"></ion-icon>
+                        <a href="#">@dresden</a>
+                    </div>
+                </div>
+                <div class="col span_1_of_4 box">
+                    <img src="./resources/img/city4.png" alt="Cities">
+                    <h3>London</h3>
+                    <div class="city-feature">
+                        <ion-icon class="city-icon" name="person-circle-outline"></ion-icon>
+                        3000+ Happy Eaters
+                    </div>
+                    <div class="city-feature">
+                        <ion-icon class="city-icon" name="restaurant-outline"></ion-icon>
+                        40+ Chefs
+                    </div>
+                    <div class="city-feature">
+                        <ion-icon class="city-icon" name="logo-twitter"></ion-icon>
+                        <a href="#">@london</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-testimonials" id="about" data-aos="fade-in" data-aos-duration="2000">
+            <div class="row">
+                <h2>Loved by Thousands of Happy Customers</h2>
+            </div>
+            <div class="row">
+                <div class="col span_1_of_3">
+                    <blockquote>
+                        <b>Feels like homemade!</b><br>
+                        I tried the biryani and butter naan combo — it reminded me of home-cooked meals. Packaging was neat and the food arrived hot!
+                    </blockquote>
+                    <cite><img src="./resources/img/cust1.png" alt="Customer">Ritika Sharma</cite>
+                </div>
+                <div class="col span_1_of_3">
+                    <blockquote>
+                        <b>Absolutely loved the food!</b><br>
+                        TastyTales exceeded my expectations. The ingredients were fresh, the flavors were rich, and delivery was super fast. Will definitely order again!
+                    </blockquote>
+                    <cite><img src="./resources/img/cust2.png" alt="Customer">Akash Mehta</cite>
+                </div>
+                <div class="col span_1_of_3">
+                    <blockquote>
+                        <b>Great variety and quality</b><br>
+                        I appreciate the diverse menu and quality service. Whether it's Indian or Continental, every dish I’ve tried has been amazing.
+                    </blockquote>
+                    <cite><img src="./resources/img/cust3.png" alt="Customer">John Doe</cite>
+                </div>
+            </div>
+        </section>
+        <section class="section-plans" id="plans" data-aos="fade-in" data-aos-duration="2000">
+            <div class="row">
+                <h2>Your Journey to Delicious Begins Now</h2>
+            </div>
+            <div class="row">
+                <div class="col span_2_of_2 plan-box">
+                    <h3>Get Exclusive Offers!</h3>
+                    <p>Join our community and get access to tasty discounts and secret menus.</p>
+                    <input type="email" placeholder="Enter your email">
+                    <button class="btn btn-suscribe">Subscribe</button>
+                </div>
+            </div>
+        </section>
+        <section class="section-form" id="contact" data-aos="fade-in" data-aos-duration="2000">
+            <div class="row">
+                <h2>Get in Touch</h2>
+            </div>
+            <div class="row form-align form-box">
+                <form method="post" action="#" class="contact-form">
+                    <div class="row">
+                        <div class="col span_1_of_3">
+                            <label>Name</label>
+                        </div>
+                        <div class="col span_2_of_3">
+                            <input type="text" name="name" placeholder="Your name" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span_1_of_3">
+                            <label>Email</label>
+                        </div>
+                        <div class="col span_2_of_3">
+                            <input type="email" name="email" placeholder="Your name" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span_1_of_3">
+                            <label>How did you find us?</label>
+                        </div>
+                        <div class="col span_2_of_3">
+                            <select name="find-us" id="find-us">
+                                <option value="friends" selected>Friends</option>
+                                <option value="search">Search Engine</option>
+                                <option value="ad">Advertisement</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span_1_of_3">
+                            <label>Drop us a line</label>
+                        </div>
+                        <div class="col span_2_of_3">
+                            <textarea name="message" placeholder="Your message" cols="20" rows="5"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span_1_of_3">
+                            <label>&nbsp;</label>
+                        </div>
+                        <div class="col span_2_of_3">
+                            <input type="submit" value="Send it!">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <footer>
+            <div class="row form-align">
+                <div class="col span_1_of_2">
+                    <ul class="footer-nav">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </div>
+                <div class="col span_1_of_2">
+                    <ul class="social-links">
+                        <li><ion-icon class="fb" name="logo-facebook"></ion-icon></li>
+                        <li><ion-icon class="twitter" name="logo-twitter"></ion-icon></li>
+                        <li><ion-icon class="google" name="logo-google"></ion-icon></li>
+                        <li><ion-icon class="insta" name="logo-instagram"></ion-icon></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <p>Copyright &copy; 2025 by TastyTales. All rights reserved.</p>
+            </div>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script>
+            $(document).ready(function(){
+            // Add smooth scrolling to all links
+            $("a").on('click', function(event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function(){
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+                } // End if
+            });
+            });
+        </script><script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+    </body>
+</html>
